@@ -2,4 +2,13 @@
 layout: default
 ---
 
-{{ content }}
+<section class="news">
+  <div class="grid">
+    {% include post_contents_mobile.html -%}
+    <div class="unit four-fifths">
+      {{- content -}}
+    </div>
+    {% include post_contents.html -%}
+    <div class="clear"></div>
+  </div>
+</section>

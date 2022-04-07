@@ -1,0 +1,42 @@
+---
+version: 4.2.2
+name: Jekyll • Simple, blog-aware, static sites
+description: Transform your plain text into static websites and blogs
+repository: https://github.com/jekyll/jekyll
+timezone: Asia/Shanghai
+twitter:
+  username: jekyllrb
+logo: "/img/logo-2x.png"
+cloudinary_url: https://res.cloudinary.com/jekyll/image/upload/f_auto,q_auto,w_404
+collections:
+  posts:
+    permalink: "/:year/:month/:title.html"
+    output: true
+defaults:
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: post_item
+    category: post
+- scope:
+    path: ''
+  values:
+    image: "/img/jekyll-og.png"
+future: true
+plugins:
+- jekyll-feed
+- jekyll-sitemap
+- jekyll-seo-tag
+feed:
+  categories:
+  - release
+kramdown:
+  syntax_highlighter_opts:
+    default_lang: plaintext
+sass:
+  style: compressed
+strict_front_matter: true
+exclude:
+- icomoon-selection.json
+- readme.md
