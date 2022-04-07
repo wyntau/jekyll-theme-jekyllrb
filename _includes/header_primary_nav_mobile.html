@@ -7,8 +7,13 @@
       {% else -%}
         {%- if page.url contains p.link %} class="current" {% endif -%}
       {% endif -%}
-    ><a href="{{ p.link | relative_url }}">{{ p.title }}</a></li>
+    >
+      {% if p.link contains "https://" or p.link contains "http://" %}
+        <a href="{{ p.link }}" target="_blank">{{ p.title }}</a>
+      {% else %}
+        <a href="{{ p.link | relative_url }}">{{ p.title }}</a>
+      {% endif %}
+    </li>
     {% endif -%}
   {% endfor -%}
-  <li><a href="{{ site.repository }}">GitHub</a></li>
 </ul>

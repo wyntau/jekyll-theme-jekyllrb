@@ -1,11 +1,16 @@
 <div class="docs-nav-mobile unit whole show-on-mobiles">
   <select onchange="if (this.value) window.location.href=this.value">
-    <option value="">Navigate the blog…</option>
-    <option value="{{ '/news/' | relative_url }}">Home</option>
-    <optgroup label="posts">
+    <option value="">导航</option>
+    <option value="{{ '/' | relative_url }}">首页</option>
+    <optgroup label="文章">
       {% for post in site.posts -%}
       <option value="{{ post.url | relative_url }}">{{ post.title }}</option>
       {% endfor -%}
     </optgroup>
+    <!-- <optgroup label="页面">
+      {% for page in site.pages -%}
+      <option value="{{ page.url | relative_url }}">{{ page.title }}</option>
+      {% endfor -%}
+    </optgroup> -->
   </select>
 </div>
