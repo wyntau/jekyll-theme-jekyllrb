@@ -4,6 +4,8 @@
     <li
       {%- if p.link == '/' -%}
         {%- if page.url == '/' %} class="current" {% endif -%}
+      {% elsif p.link contains "/archive" %}
+        {% if page.url contains p.link or page.layout == "post" or page.layout == "post_item" %} class="current" {%- endif -%}
       {% else -%}
         {%- if page.url contains p.link %} class="current" {% endif -%}
       {% endif -%}

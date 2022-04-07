@@ -1,0 +1,30 @@
+---
+layout: error
+---
+
+<section class="intro">
+  <div class="grid">
+    <div class="unit whole align-center">
+      <p class="first">Huh. It seems that page is<br/>Hyde-ing...</p>
+    </div>
+  </div>
+</section>
+
+<section class="error">
+  <div class="grid">
+    <div class="unit whole align-center">
+      <p>The resource you requested was not found. Here are some links to help you find your way:</p>
+
+      <nav class="main-nav hide-on-mobiles">
+        {% include header_primary_nav.html -%}
+      </nav>
+
+      <!--#region only show on mobile devices -->
+      <nav class="mobile-nav show-on-mobiles">
+        {% include header_primary_nav_mobile.html -%}
+      </nav>
+      <!--#endregion -->
+
+    </div>
+  </div>
+</section>

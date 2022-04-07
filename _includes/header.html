@@ -13,6 +13,12 @@
       {% include header_primary_nav.html -%}
     </nav>
 
+    <!--#region only show on mobile devices -->
+    <nav class="mobile-nav show-on-mobiles">
+      {% include header_primary_nav_mobile.html -%}
+    </nav>
+    <!--#endregion -->
+
     <div class="search hide-on-mobiles">
       {% include search/input.html -%}
     </div>
@@ -25,7 +31,4 @@
     </div>
     {% endif %} -->
   </div>
-  <nav class="mobile-nav show-on-mobiles">
-    {% include header_primary_nav_mobile.html -%}
-  </nav>
 </header>
