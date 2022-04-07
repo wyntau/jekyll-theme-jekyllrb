@@ -1,0 +1,27 @@
+---
+layout: page
+---
+
+{% if site.posts.size %}
+  <ul>
+    {% for post in site.posts  %}
+      {% assign prev_post_year = post.next.date | date: "%Y" %}
+      {% assign this_post_year = post.date | date: "%Y" %}
+      {% assign next_post_year = post.previous.date | date: "%Y" %}
+
+      {% if this_post_year != prev_post_year %}
+        <li><span>{{this_post_year}}</span>
+          <ul>
+      {% endif %}
+
+            <li>{{ post.date | date: "%m-%d" }} : <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+
+      {% if this_post_year != next_post_year %}
+          </ul>
+        </li>
+      {% endif %}
+
+    {% endfor %}
+  </ul>
+{% endif %}
+
