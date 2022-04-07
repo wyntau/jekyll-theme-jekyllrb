@@ -679,8 +679,8 @@ article h2:first-child { margin-top: 0; }
 
 .news article + article {
   margin-top: -6px;
-  // padding: 15px 40px;
-  // border-top: 1px solid #555;
+  padding: 15px 40px;
+  border-top: 1px solid #555;
   border-radius: 0;
   @include box-shadow(0 -1px 0 #2f2f2f);
 
@@ -689,8 +689,8 @@ article h2:first-child { margin-top: 0; }
   }
   .post-category {
     margin-right: 20px;
-    // padding-left: 0;
-    // width: 150px;
+    padding-left: 0;
+    width: 150px;
     box-sizing: border-box;
     .label {
       float: right;
