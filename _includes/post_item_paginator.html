@@ -1,0 +1,17 @@
+<div class="section-nav">
+  <div class="left align-right">
+      {% if page.previous %}
+        <a href="{{ page.previous.url | relative_url }}" class="prev" title="{{ page.previous.title }}">Back</a>
+      {% else %}
+        <span class="prev disabled">Back</span>
+      {% endif %}
+  </div>
+  <div class="right align-left">
+      {% if page.next %}
+        <a href="{{ page.next.url | relative_url }}" class="next" title="{{ page.next.title }}">Next</a>
+      {% else %}
+        <span class="next disabled">Next</span>
+      {% endif %}
+  </div>
+</div>
+<div class="clear"></div>

@@ -28,4 +28,10 @@ layout: post_list
   <div class="post-content">
     {{ content }}
   </div>
+
+  {% include post_item_paginator.html %}
+</article>
+
+<article>
+  {% include comments.html %}
 </article>

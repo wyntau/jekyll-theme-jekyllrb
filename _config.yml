@@ -1,5 +1,4 @@
 ---
-version: 4.2.2
 name: Jekyll • Simple, blog-aware, static sites
 description: Transform your plain text into static websites and blogs
 repository: https://github.com/jekyll/jekyll
@@ -19,6 +18,7 @@ defaults:
   values:
     layout: post_item
     category: post
+    comments: true
 - scope:
     path: ''
   values:
@@ -40,3 +40,8 @@ strict_front_matter: true
 exclude:
 - icomoon-selection.json
 - readme.md
+
+comments:
+  provider: disqus
+  disqus:
+    short_name: isaymesite
