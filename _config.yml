@@ -6,7 +6,7 @@ repository: https://github.com/jekyll/jekyll
 timezone: Asia/Shanghai
 twitter:
   username: jekyllrb
-logo: "/img/logo-2x.png"
+logo: "/assets/img/logo-2x.png"
 cloudinary_url: https://res.cloudinary.com/jekyll/image/upload/f_auto,q_auto,w_404
 collections:
   posts:
@@ -22,7 +22,7 @@ defaults:
 - scope:
     path: ''
   values:
-    image: "/img/jekyll-og.png"
+    image: "/assets/img/jekyll-og.png"
 future: true
 plugins:
 - jekyll-feed
