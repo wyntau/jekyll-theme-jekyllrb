@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<section class="news">
+  <div class="grid">
+    {% include post_list_nav_mobile.html -%}
+    <div class="unit four-fifths">
+      {{- content -}}
+    </div>
+    {% include post_aside.html -%}
+    <div class="clear"></div>
+  </div>
+</section>

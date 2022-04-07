@@ -1,14 +1,11 @@
 ---
-layout: default
+layout: post_container
 ---
 
-<section class="news">
-  <div class="grid">
-    {% include post_list_nav_mobile.html -%}
-    <div class="unit four-fifths">
-      {{- content -}}
-    </div>
-    {% include post_aside.html -%}
-    <div class="clear"></div>
-  </div>
-</section>
+{% for post in site.posts -%}
+  {% if forloop.index == 1 -%}
+    {% include post_item_excerpt.html -%}
+  {% else -%}
+    {% include post_item_excerpt.html -%}
+  {% endif -%}
+{% endfor -%}
