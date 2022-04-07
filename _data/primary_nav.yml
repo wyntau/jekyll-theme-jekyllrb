@@ -1,15 +1,3 @@
-- title: Home
+- title: 首页
   link: /
-  show_on_mobile: true
-- title: Docs
-  link: /docs/
-  show_on_mobile: true
-- title: Resources
-  link: /resources/
-  show_on_mobile: true
-- title: Showcase
-  link: /showcase/
-  show_on_mobile: false
-- title: News
-  link: /news/
   show_on_mobile: true

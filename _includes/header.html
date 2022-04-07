@@ -8,18 +8,22 @@
         </a>
       </h1>
     </div>
+
     <nav class="main-nav hide-on-mobiles">
       {% include primary-nav-items.html -%}
     </nav>
-    <!-- <div class="search hide-on-mobiles">
+
+    <div class="search hide-on-mobiles">
       {% include search/input.html -%}
-    </div> -->
-    <!-- <div class="meta hide-on-mobiles">
+    </div>
+
+    {% if site.repository %}
+    <div class="meta hide-on-mobiles">
       <ul>
-        <li><a href="{{ site.repository }}/releases/tag/v{{ site.version }}">v{{ site.version }}</a></li>
         <li><a href="{{ site.repository }}">GitHub</a></li>
       </ul>
-    </div> -->
+    </div>
+    {% endif %}
   </div>
   <nav class="mobile-nav show-on-mobiles">
     {% include mobile-nav-items.html -%}

@@ -8,15 +8,9 @@
         <a href="{{ '/news/releases/' | relative_url }}">Jekyll Releases</a>
       </li>
     </ul>
-    <h4>Other Posts</h4>
-    <ul>
-    {% for post in site.posts -%}
-      {% unless post.categories contains 'release' -%}
-      <li {%- if page.title == post.title %} class="current" {%- endif %}>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </li>
-      {% endunless -%}
-    {% endfor -%}
-    </ul>
+
+    {% include post_recently.html %}
+
+    {% include post_related.html %}
   </aside>
 </div>
