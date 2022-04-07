@@ -1,14 +1,9 @@
 ---
-layout: default
+layout: post_item
 ---
 
-<section class="news">
-  <div class="grid">
-    {% include post_contents_mobile.html -%}
-    <div class="unit four-fifths">
-      {{- content -}}
-    </div>
-    {% include post_aside.html -%}
-    <div class="clear"></div>
-  </div>
-</section>
+{% comment %}
+增加 post.html 占位, 因为有的文章直接使用 layout: post
+{% endcomment %}
+
+{{ content }}
