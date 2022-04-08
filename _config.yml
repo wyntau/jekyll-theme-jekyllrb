@@ -95,6 +95,9 @@ defaults:
 # User Configuration
 # --------------------
 
+title: jekyll-theme-jekyllrb
+description: jekyllrb website theme
+
 # # comments
 # comments:
 #   provider: disqus
