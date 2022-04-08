@@ -1,5 +1,17 @@
 header {
   .flexbox {
     justify-content: center;
+
+    nav.hide-on-mobiles {
+      margin-left: 0;
+    }
   }
+}
+
+aside ul li {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  display: -webkit-box;
+  overflow: hidden;
 }
