@@ -24,7 +24,7 @@
   </div>
 
   <div class="improve right">
-    <a href="{{ post.url | relative_url }}"><i class="fa fa-link"></i>&nbsp;READ MORE ...</a>
+    <a href="{{ post.url | relative_url }}"><i class="fa fa-link"></i>&nbsp;{{ site.data.locale[site.locale].post_read_more | default: 'READ MORE ...'}}</a>
   </div>
   <div class="clear"></div>
 </article>

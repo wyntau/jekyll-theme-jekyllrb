@@ -1,5 +1,6 @@
 recent_posts: Recent Posts
 related_posts: Related Posts
 
-next_post: Next
-prev_post: Back
+post_next: Next
+post_prev: Back
+post_read_more: READ MORE ...

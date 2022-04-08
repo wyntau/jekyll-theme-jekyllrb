@@ -1,5 +1,6 @@
 recent_posts: 最近文章
 related_posts: 相关文章
 
-next_post: 下一篇
-prev_post: 上一篇
+post_next: 下一篇
+post_prev: 上一篇
+post_read_more: 阅读更多 ...

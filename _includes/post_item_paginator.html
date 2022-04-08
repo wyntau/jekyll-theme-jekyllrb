@@ -2,19 +2,19 @@
   <div class="left align-right">
       {% if page.previous %}
         <a href="{{ page.previous.url | relative_url }}" class="prev" title="{{ page.previous.title }}">
-          {{ site.data.locale[site.locale].prev_post | default: 'Back' }}
+          {{ site.data.locale[site.locale].post_prev | default: 'Back' }}
         </a>
       {% else %}
-        <span class="prev disabled">{{ site.data.locale[site.locale].prev_post | default: 'Back' }}</span>
+        <span class="prev disabled">{{ site.data.locale[site.locale].post_prev | default: 'Back' }}</span>
       {% endif %}
   </div>
   <div class="right align-left">
       {% if page.next %}
         <a href="{{ page.next.url | relative_url }}" class="next" title="{{ page.next.title }}">
-          {{ site.data.locale[site.locale].next_post | default: 'Next' }}
+          {{ site.data.locale[site.locale].post_next | default: 'Next' }}
         </a>
       {% else %}
-        <span class="next disabled">{{ site.data.locale[site.locale].next_post | default: 'Next' }}</span>
+        <span class="next disabled">{{ site.data.locale[site.locale].post_next | default: 'Next' }}</span>
       {% endif %}
   </div>
 </div>
