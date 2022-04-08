@@ -36,8 +36,8 @@ sass:
 # whitelist           : []
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # # Conversion
 # markdown            : kramdown
