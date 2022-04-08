@@ -1,0 +1,24 @@
+---
+layout: page
+---
+
+{% if site.categories.size %}
+  <p>
+    {% for category in site.categories %}
+      <a style="margin-right: 1em;" href="#{{ category[0] }}" title="{{ category[0] }}" rel="{{ category[1].size }}">{{ category[0] }}</a>
+    {% endfor %}
+  </p>
+
+  <ul>
+    {% for category in site.categories %}
+    <li>
+      <span id="{{ category[0] }}">{{ category[0] }}</span>
+      <ul>
+        {% for post in category[1] %}
+        <li>{{ post.date | date: "%Y-%m-%d" }} : <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+  </ul>
+{% endif %}
