@@ -1,3 +1,4 @@
+//# region 调整标题栏部分样式
 header {
   .flexbox {
     justify-content: center;
@@ -7,7 +8,9 @@ header {
     }
   }
 }
+//# endregion
 
+//# region 侧边栏添加文字溢出效果, 同时保持被选中项的左三角
 aside ul li {
   position: relative;
 
@@ -32,3 +35,4 @@ aside ul li {
     line-height: 24.15px; /* reset line-height */
   }
 }
+//#endregion
