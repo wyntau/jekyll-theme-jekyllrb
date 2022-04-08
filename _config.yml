@@ -92,8 +92,11 @@ defaults:
 #   show_warnings     : false
 
 # ==================== #
-# User Configuration
+# Theme Configuration
 # ==================== #
+
+# locale
+locale: zh_CN
 
 title: jekyll-theme-jekyllrb
 description: jekyllrb website theme
