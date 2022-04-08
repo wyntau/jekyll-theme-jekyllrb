@@ -1,7 +1,12 @@
+{% comment -%}
+# params
+- post: object
+{% endcomment -%}
+
 <div class="section-nav">
   <div class="left align-right">
-      {% if page.previous %}
-        <a href="{{ page.previous.url | relative_url }}" class="prev" title="{{ page.previous.title }}">
+      {% if include.post.previous %}
+        <a href="{{ include.post.previous.url | relative_url }}" class="prev" title="{{ include.post.previous.title }}">
           {{ site.data.locale[site.locale].post_prev | default: 'Back' }}
         </a>
       {% else %}
@@ -9,8 +14,8 @@
       {% endif %}
   </div>
   <div class="right align-left">
-      {% if page.next %}
-        <a href="{{ page.next.url | relative_url }}" class="next" title="{{ page.next.title }}">
+      {% if include.post.next %}
+        <a href="{{ include.post.next.url | relative_url }}" class="next" title="{{ include.post.next.title }}">
           {{ site.data.locale[site.locale].post_next | default: 'Next' }}
         </a>
       {% else %}

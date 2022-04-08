@@ -4,8 +4,8 @@ layout: post_container
 
 {% for post in site.posts limit:6 -%}
   {% if forloop.index == 1 -%}
-    {% include post_list_item.html render_type='excerpt' -%}
+    {% include post_item.html post=post render_content_type='excerpt' title_clickable=true -%}
   {% else -%}
-    {% include post_list_item.html render_type='excerpt' -%}
+    {% include post_item.html post=post render_content_type='excerpt' title_clickable=true -%}
   {% endif -%}
 {% endfor -%}

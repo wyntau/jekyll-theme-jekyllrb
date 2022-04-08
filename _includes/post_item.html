@@ -1,0 +1,75 @@
+{% comment -%}
+# params
+- post
+- title_clickable: boolean
+- render_content_type: enum
+  - archive
+  - content
+  - excerpt
+- render_paginator: boolean
+- render_comments: boolean
+{% endcomment -%}
+<article>
+  {% if include.title_clickable %}
+    <h2>
+      <a href="{{ include.post.url | relative_url }}">
+        {{- include.post.title -}}
+      </a>
+    </h2>
+  {% else %}
+    <h2>
+      {{ include.post.title }}
+      <a href="{{ include.post.url | relative_url }}" class="header-link" title="Permalink">
+        <span class="sr-only">Permalink</span>
+        <i class="fa fa-link"></i>
+      </a>
+    </h2>
+  {% endif %}
+
+  {% comment -%}
+  <span class="post-category">
+    <span class="label">
+      {{- page.categories | array_to_sentence_string -}}
+    </span>
+  </span>
+  {% endcomment -%}
+
+  <span class="post-pubdate">
+    <span class="label">
+      {{- include.post.date | date_to_string -}}
+    </span>
+  </span>
+  <div class="post-meta">
+    <!-- <span class="post-date">
+      {{- include.post.date | date_to_string -}}
+    </span> -->
+    {% assign author = include.post.author -%}
+    <a href="https://github.com/{{ author }}" class="post-author">
+      {% comment %}{% avatar user=author size=24 -%}{% endcomment %}
+      <span class="author-name">{{ author }}</span>
+    </a>
+  </div>
+
+  {% case include.render_content_type %}
+    {% when 'excerpt' %}
+      <div class="post-content">
+        {{- include.post.excerpt -}}
+      </div>
+      <div class="improve right">
+        <a href="{{ post.url | relative_url }}"><i class="fa fa-link"></i>&nbsp;{{ site.data.locale[site.locale].post_read_more | default: 'READ MORE ...'}}</a>
+      </div>
+      <div class="clear"></div>
+    {% when 'content' %}
+      <div class="post-content">
+        {{- include.post.content -}}
+      </div>
+  {% endcase %}
+
+  {% if include.render_paginator %}
+    {% include post_item_paginator.html post=include.post %}
+  {% endif %}
+</article>
+
+{% if include.render_comments %}
+  {% include comments.html page=include.post %}
+{% endif %}
