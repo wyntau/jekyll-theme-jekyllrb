@@ -9,9 +9,26 @@ header {
 }
 
 aside ul li {
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  display: -webkit-box;
-  overflow: hidden;
+  position: relative;
+
+  &.current::before {
+    content: "";
+    border-color: transparent transparent transparent #444;
+    border-style: solid;
+    border-width: 10px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0px;
+    left: -30px;
+  }
+
+  a {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    line-height: 24.15px; /* reset line-height */
+  }
 }
