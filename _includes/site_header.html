@@ -20,9 +20,11 @@
     </nav>
     <!--#endregion -->
 
+    {% if site.docsearch %}
     <div class="search hide-on-mobiles">
       {% include search_input.html -%}
     </div>
+    {% endif %}
 
     <!-- {% if site.repository %}
     <div class="meta hide-on-mobiles">
