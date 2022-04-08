@@ -24,4 +24,19 @@
       <span class="author-name">{{ author }}</span>
     </a>
   </div>
+
+  {% case include.render_type %}
+    {% when 'excerpt' %}
+      <div class="post-content">
+        {{- post.excerpt -}}
+      </div>
+      <div class="improve right">
+        <a href="{{ post.url | relative_url }}"><i class="fa fa-link"></i>&nbsp;{{ site.data.locale[site.locale].post_read_more | default: 'READ MORE ...'}}</a>
+      </div>
+      <div class="clear"></div>
+    {% when 'content' %}
+      <div class="post-content">
+        {{- post.content -}}
+      </div>
+  {% endcase %}
 </article>
