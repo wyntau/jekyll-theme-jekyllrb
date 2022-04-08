@@ -2,7 +2,7 @@
 layout: post_container
 ---
 
-{% for post in site.posts -%}
+{% for post in site.posts limit:6 -%}
   {% if forloop.index == 1 -%}
     {% include post_item_excerpt.html -%}
   {% else -%}

@@ -1,7 +1,7 @@
 {% if site.posts.size %}
   <h4>最近文章</h4>
   <ul>
-  {% for post in site.posts -%}
+  {% for post in site.posts limit:6 -%}
     <li {%- if page.title == post.title %} class="current" {%- endif %}>
       <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li>
