@@ -36,3 +36,7 @@ aside ul li {
   }
 }
 //#endregion
+
+.post-pubdate {
+  @extend .post-category;
+}

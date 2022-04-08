@@ -67,7 +67,6 @@ defaults:
     values:
       comments: true
       layout: post_item
-      category: post
   - scope:
       path: ""      # empty string for all files
       type: pages   # limit to posts
