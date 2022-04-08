@@ -1,9 +1,13 @@
+{% comment -%}
+# params
+- page
+{% endcomment -%}
 <div id="disqus_thread"></div>
 <script>
   function disqus_config() {
-      this.page.url = "{{ page.url | absolute_url }}";
-      this.page.identifier = "{{ page.pid }}";
-      this.page.title = "{{ page.title }}";
+      this.page.url = "{{ include.page.url | absolute_url }}";
+      this.page.identifier = "{{ include.page.pid }}";
+      this.page.title = "{{ include.page.title }}";
   };
 
   (function() {
