@@ -1,6 +1,6 @@
-# --------------------
+# ==================== #
 # Default Configuration ovewrite
-# --------------------
+# ==================== #
 
 # # Where things are
 # source              : .
@@ -91,9 +91,9 @@ defaults:
 #   footnote_nr       : 1
 #   show_warnings     : false
 
-# --------------------
+# ==================== #
 # User Configuration
-# --------------------
+# ==================== #
 
 title: jekyll-theme-jekyllrb
 description: jekyllrb website theme
