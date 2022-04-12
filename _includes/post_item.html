@@ -1,7 +1,7 @@
 {% comment -%}
 # params
 - post
-- title_clickable: boolean
+- render_title_link: boolean
 - render_content_type: enum
   - archive
   - content
@@ -10,7 +10,7 @@
 - render_comments: boolean
 {% endcomment -%}
 <article>
-  {% if include.title_clickable %}
+  {% if include.render_title_link %}
     <h2>
       <a href="{{ include.post.url | relative_url }}">
         {{- include.post.title -}}

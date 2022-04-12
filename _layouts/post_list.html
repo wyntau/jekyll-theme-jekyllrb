@@ -4,8 +4,8 @@ layout: post_shared
 
 {% for post in site.posts limit:6 -%}
   {% if forloop.index == 1 -%}
-    {% include post_item.html post=post render_content_type='excerpt' title_clickable=true -%}
+    {% include post_item.html post=post render_content_type='excerpt' render_title_link=true -%}
   {% else -%}
-    {% include post_item.html post=post render_content_type='excerpt' title_clickable=true -%}
+    {% include post_item.html post=post render_content_type='excerpt' render_title_link=true -%}
   {% endif -%}
 {% endfor -%}
