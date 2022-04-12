@@ -1,5 +1,5 @@
 {% if site.related_posts.size %}
-  <h4>{{ site.data.locale[site.locale].related_posts | default: 'Related Posts' }}</h4>
+  <h4>{{ site.data.locale[site.locale].related_posts | default: '相关文章' }}</h4>
   <ul>
   {% for post in site.related_posts limit:6 -%}
     <li {%- if page.url == post.url %} class="current" {%- endif %}>
