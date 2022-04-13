@@ -100,8 +100,17 @@ locale: zh_CN
 title: jekyll-theme-jekyllrb
 description: jekyllrb website theme
 
-# # comments
-# comments:
-#   provider: disqus
-#   disqus:
-#     shortname: isaymesite
+# comments
+comments:
+  provider: disqus
+  disqus:
+    shortname: foobar
+
+# search
+search:
+  provider: google_cse
+  google_cse:
+    cx: foobar
+  docsearch:
+    apiKey: apiKey
+    indexName: indexName

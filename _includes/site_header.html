@@ -20,7 +20,7 @@
     </nav>
     <!--#endregion -->
 
-    {% if site.docsearch %}
+    {% if site.search.provider == "docsearch" %}
     <div class="search hide-on-mobiles">
       {% include search_input.html -%}
     </div>

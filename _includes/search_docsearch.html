@@ -1,0 +1,11 @@
+<input type="text" id="docsearch-input" placeholder="搜索...">
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  docsearch({
+    apiKey: '{{ site.search.docsearch.apiKey }}',
+    indexName: '{{ site.search.docsearch.indexName }}',
+    inputSelector: '#docsearch-input',
+    enhancedSearchInput: true,
+    debug: false // Set debug to true if you want to inspect the dropdown
+  });
+</script>

@@ -1,0 +1,17 @@
+{% comment -%}
+# params
+- page
+{% endcomment -%}
+
+{% if jekyll.environment == 'production' and site.search.provider %}
+  {% case site.search.provider %}
+    {% when "google_cse" %}
+      {% if site.search.google_cse.cx %}
+        {% include search_google_cse.html page=include.page %}
+      {% endif %}
+    {% when "docsearch" %}
+      {% if site.search.docsearch.apiKey %}
+        {% include search_docsearch.html page=include.page %}
+      {% endif %}
+  {% endcase %}
+{% endif %}
