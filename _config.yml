@@ -104,13 +104,19 @@ description: jekyllrb website theme
 comments:
   provider: disqus
   disqus:
-    shortname: foobar
+    shortname:
 
 # search
 search:
   provider: google_cse
   google_cse:
-    cx: foobar
+    cx:
   docsearch:
-    apiKey: apiKey
-    indexName: indexName
+    apiKey:
+    indexName:
+
+# analytics
+analytics:
+  provider: google_analytics
+  google_analytics:
+    id:

@@ -1,0 +1,13 @@
+{% comment -%}
+# params
+- page
+{% endcomment -%}
+
+{% if jekyll.environment == 'production' and site.analytics.provider %}
+  {% case site.analytics.provider %}
+    {% when "google_analytics" %}
+      {% if site.analytics.google_analytics.id %}
+        {% include analytics_google_analytics.html %}
+      {% endif %}
+  {% endcase %}
+{% endif %}
