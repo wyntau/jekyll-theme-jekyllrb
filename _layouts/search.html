@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<section class="standalone">
+  <div class="grid">
+    <div class="unit whole">
+      {% case site.search.provider %}
+        {% when "google_cse" %}
+          <div class="gcse-search"></div>
+          <script async src="https://cse.google.com/cse.js?cx={{ site.search.google_cse.cx }}"></script>
+      {% endcase %}
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
