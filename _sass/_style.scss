@@ -891,8 +891,9 @@ blockquote {
 
 
 /* Tables */
+/* Only apply in standard page excerpt search page */
 
-table {
+.standard table {
   width: 100%;
   background-color: #555;
   margin: .5em 0;
@@ -900,7 +901,7 @@ table {
   @include box-shadow(0 1px 3px rgba(0,0,0,.3));
 }
 
-thead {
+.standard thead {
   @include border-top-left-radius(5px);
   @include border-top-right-radius(5px);
   color: #fff;
@@ -927,11 +928,11 @@ thead {
   }
 }
 
-td { padding: .5em .75em; }
+.standard td { padding: .5em .75em; }
 
-td p { margin: 0; }
+.standard td p { margin: 0; }
 
-th {
+.standard th {
   text-transform: uppercase;
   font-size: 16px;
   padding: .5em .75em;
@@ -939,7 +940,7 @@ th {
   color: #888;
 }
 
-tbody td {
+.standard tbody td {
   border-top: 1px solid #747474;
   border-top: 1px solid rgba(0,0,0,.1);
   @include box-shadow(inset 0 1px 0 rgba(255,255,255,.1));
