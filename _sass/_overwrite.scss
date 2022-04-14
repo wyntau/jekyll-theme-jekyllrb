@@ -41,7 +41,18 @@ aside ul li {
   @extend .post-category;
 }
 
+//#region google cse
 .gsc-control-cse {
   text-shadow: none;
   line-height: 1.4;
 }
+.gssb_c {
+  @extend .gsc-control-cse;
+  table td span {
+    color: #000;
+    b {
+      font-weight: bold;
+    }
+  }
+}
+//#endregion

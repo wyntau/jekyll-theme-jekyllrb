@@ -1,10 +1,10 @@
-<form class="searchbox" action="{{ '/search.html' | absolute_url }}" target="_blank">
-  <input id="docsearch" type="search" name="q" placeholder="Search the docs" class="searchbox__input">
-    <button type="submit" title="Submit your search query." class="searchbox__submit">
-      <svg width="12" height="12" role="img" aria-label="Search">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-13"></use>
-      </svg>
-    </button>
+<form class="searchbox" action="{{ site.search_path | default: '/search.html' | absolute_url }}">
+  <input id="docsearch" type="search" name="q" placeholder="搜索" class="searchbox__input">
+  <button type="submit" title="提交搜索" class="searchbox__submit">
+    <svg width="12" height="12" role="img" aria-label="Search">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-13"></use>
+    </svg>
+  </button>
 </form>
 <div class="svg-icons" style="display: none;">
   <svg xmlns="http://www.w3.org/2000/svg">
