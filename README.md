@@ -1,6 +1,6 @@
 # jekyll-theme-jekyllrb
 
-Jekyll-theme-jekyllrb is a jekyll theme which was splited out from [jekyll website](jekyllrb.com)
+Jekyll-theme-jekyllrb is a jekyll theme which was splited out from [jekyll website](https://jekyllrb.com)
 
 ## Installation
 
@@ -27,7 +27,7 @@ TODO: Write usage instructions here. Describe your available layouts, includes, 
 
 
 ## Thanks
-Special thanks to [jekyllrb.com](jekyllrb.com)
+Special thanks to [jekyllrb.com](https://jekyllrb.com)
 
 ## License
 
