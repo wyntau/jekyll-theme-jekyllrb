@@ -1,12 +1,3 @@
 - title: 首页
   link: /
   show_on_mobile: true
-- title: 归档
-  link: /archives.html
-  show_on_mobile: true
-- title: 标签
-  link: /tags.html
-  show_on_mobile: true
-- title: GITHUB
-  link: https://github.com/wyntau
-  show_on_mobile: true
