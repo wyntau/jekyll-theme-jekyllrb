@@ -1,5 +1,5 @@
 {% if site.posts.size %}
-  <h4>{{ site.data.locale[site.locale].recent_posts | default: '最近文章' }}</h4>
+  <h4>{{ site.data.locale[site.locale].recent_posts }}</h4>
   <ul>
   {% for post in site.posts limit:6 -%}
     <li {%- if page.url == post.url %} class="current" {%- endif %}>
