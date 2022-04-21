@@ -21,6 +21,12 @@ You can install the latest code via [`jekyll-remote-theme`](https://github.com/b
     remote_theme: wyntau/jekyll-theme-jekyllrb
     ```
 
+3. Because the latest gem version jekyll do not support read files in theme's `_data` directory, so use the latest version jekyll in github in your `Gemfile`
+
+    ```ruby
+    gem 'jekyll', :github => 'jekyll/jekyll'
+    ```
+
 ## Usage
 
 TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
