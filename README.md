@@ -14,6 +14,8 @@ You can install the latest code via [`jekyll-remote-theme`](https://github.com/b
 2. Add these lines to your Jekyll site's `_config.yml`:
     ```yml
     plugins:
+      - jekyll-feed
+      - jekyll-seo-tag
       - jekyll-remote-theme
     remote_theme: wyntau/jekyll-theme-jekyllrb
     ```
@@ -22,16 +24,15 @@ You can install the latest code via [`jekyll-remote-theme`](https://github.com/b
         ```ruby
         gem 'jekyll', :github => 'jekyll/jekyll'
         ```
-    - use `jekyll-data` plugin
+    - add `jekyll-data` plugin to your `plugins` array
         ```yml
         plugins:
           - jekyll-data
         ```
 
 ## Usage
-
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
-
+You can set some options in your `_config.yml` file.
+- `locale`, set the locale of the theme. The theme has builtin localization support for `zh_CN` and `en_US`.
 
 ## Thanks
 Special thanks to [jekyllrb.com](https://jekyllrb.com)
